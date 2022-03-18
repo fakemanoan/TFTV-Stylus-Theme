@@ -29,9 +29,16 @@ div #content {
     background: #dadadc !important;
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.22);
 }
-a.main-feature{
-    border:0;
+a.main-feature {
+    border: 0;
     box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.4);
+}
+.header {
+    background: #363636;
+    background-color: #363636;
+}
+div.header-nav-item {
+    padding-top: 6px;
 }
 .header-nav-container {
     background: #363636;
@@ -46,10 +53,22 @@ a.main-feature{
     padding: 0px 15px;
 }
 .header-nav {
-    height: 20px;
+    height: 50px;
+    width: 1198px;
+    margin-left: -1px;
 }
 .header-banner {
     height: 0;
+}
+i.fa.fa-home {
+    width: 220px;
+    height: 40px;
+    color: #d9414100;
+    text-shadow: 0 0 0 #0000;
+    background: url(https://raw.githubusercontent.com/fakemanoan/TFTV-Stylus-Theme/main/tftv.svg) no-repeat;
+    background-size: 100% 100%;
+    padding-top: 15px;
+    margin-top: -3px;
 }
 .header-logo {
     height: 0;
@@ -63,16 +82,17 @@ tr {
 
     background: white;
 }
-.server-table td{
-     font-size:11px;
+.server-table td {
+    font-size: 11px;
 }
 td {
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.22);
-   
 }
-a.stream-box{
-  
+a.module-item.mod-featured {
+    background: #fff;
+    border-left: solid 3px #3e92da!important
 }
+a.stream-box {}
 .module-header {
     background: #0000 !important;
     background-color: #0000 !important;
@@ -98,14 +118,15 @@ a.module-header {
 }
 a.module-item {
     line-height: 22px;
-    background: #fff;
-    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.4);
+    background: #eaeaea;
+    box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.4);
 }
 .module-item.mod-last {
     border-radius: 0;
 }
 div#article-list {
     width: 266px;
+    background: #fff;
 }
 span.news-item-txt-container {
     width: 211px;
@@ -123,7 +144,7 @@ div#thread-list {
     width: 760px;
     background: #fff;
     padding: 0px 5px;
-    box-shadow: 0 0 2px rgba(0, 0, 0, 0.22);
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.22);
     border: 0
 }
 div.thread-inner {
@@ -137,14 +158,15 @@ div.thread {
 }
 div.blockr.pages {
     font-size: 12px;
+    width: 150px;
     border: 0;
-    margin-top: 1px
+    margin-top: 5px
 }
 div.blockr.last-info {
     font-size: 12px;
     border: 0;
     margin-top: 5px;
-    padding-right:6px;
+    padding-right: 6px;
     width: 130px;
 }
 div.post-body {
@@ -153,6 +175,11 @@ div.post-body {
 div.post-footer {
     background: #fff;
 }
+.btn,
+a.btn {
+    font-weight: 100;
+    border-radius: 0;
+}
 div.post {
     background: #fff;
 }
@@ -160,8 +187,8 @@ div.post {
     background: #2e506b;
     font-size: 12px;
 }
-div.header-nav-item {
-    padding-top: 6px;
+table.list-table {
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.22);
 }
 div.forum-container {
     background: white;
@@ -174,6 +201,7 @@ div.forum-container {
 }
 div.subforum {
     margin: 7px;
+    height: 50px;
     margin-bottom: 10px;
     border-top: 1px solid #ccc;
     font-size: 12px;
@@ -201,7 +229,14 @@ span.module-item-flag {
     margin-top: 7px;
 }
 span.module-item-title {
-    font-size: 12px;
+    font-size: 11px;
+    color: #444l
+}
+span.news-item-title {
+    font-weight: 600;
+}
+.card {
+    background: #fff;
 }
 span.module-item-icon {
     margin-top: 7px;
@@ -224,16 +259,24 @@ div#article-wrapper {
     background: #fff;
     box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.4);
 }
+.thread-header-desc a {
+    font-weight: 500;
+}
 div.thread-header {
     background: #fff;
     margin: 0;
-    margin-bottom: -15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    padding-left: 30px;
+    height: 80px;
+    box-shadow: 0 1px 3px -1px rgba(0, 0, 0, 0.4);
 }
-.clearfix{
-    padding-bottom:5px;
+.clearfix {
+    padding-bottom: 5px;
 }
-.block.main{
-    padding-top:2px;
+.block.main {
+    padding-top: 2px;
 }
 .block.main .title {
     font-family: 'Roboto', sans-serif;
@@ -245,4 +288,5 @@ div.thread-header {
 .module-item-count {
     font-size: 12px;
 }
+.fa-home {}
 }
