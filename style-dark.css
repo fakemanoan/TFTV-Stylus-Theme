@@ -1,12 +1,12 @@
 @-moz-document domain("teamfortress.tv") {
 :root {
     --bgcolour: #232529;
-    --mgcolour: #34363D;
+    --mgcolour: #2f3337;
     --fgcolour: #40474f;
     --nbcolour: #363636;
     --sbcolour: #394046;
     --sbcolour2: #eaeaea;
-    --sbhover: #fff;
+    --sbhover: #434A51;
     --sbtitle: #e3e3e3;
     --hlcolour: #3e92da;
     --textcolour: #c1c1c1;
@@ -20,15 +20,21 @@
     --redteam: #ff0000;
     --blueteam: #00f;
     --tableheader: #2e506b;
-    --tf2stream: #2e3337;
+    --tf2stream: #2e3338;
+    --tf2streamborder: #41474f;
     --postheader: #394046;
     --postbg: #40474f;
     --postinner: #ccc;
     --border: #ccc;
     --linkcolour: #9ccbe2;
     --btncolour: #394046;
+    --btnaccent: #454c54;
+    --btncolour2: #40474f;
+    --fragcount: #22262a;
     --bordercolour: #5b6167;
     --searchbg: #535c65;
+    --dropdown: #313131;
+    --dropdownhover: #444444;
 
     --tftv-bg: /*[[bg1]]*/;
     /* default: #232529 */
@@ -84,6 +90,7 @@ div #content {
     border: 0;
 }
 #wrapper {
+    top: 1px;
     background-color: var(--mgcolour);
     background: var(--mgcolour) !important;
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.22);
@@ -174,7 +181,7 @@ td {
     -1px 0px 3px #000000d1;
 }
 #main-feature-desc {
-    color: var(--article);
+    color: var(--textcolour2);
     text-shadow: -1px 0px 2px #000000d1,
     1px 0px 2px #000000d1,
     1px 0px 2px #000000d1,
@@ -212,6 +219,11 @@ td {
     text-align: left;
     float: none;
 }
+.sub-feature:hover {
+    text-align: left;
+    float: none;
+    background: red;
+}
 .sub-feature.first {
     margin-left: 5px;
 }
@@ -221,11 +233,15 @@ td {
     border-bottom: 1px solid var(--bordercolour);
     margin-left: -10px;
     padding-left: 15px;
-    padding-top: 4px;
+    padding-top: 10px;
 }
 #article-list a {
-    color: var(--textcolour2);
+    color: var(--textcolour2) !important;
     font-weight: 500;
+    padding: 0;
+}
+#features-container {
+    width: 425px;
 }
 div#article-list {
     width: 325px;
@@ -256,7 +272,7 @@ span.news-item-title {
 }
 span.news-item-txt-container {
     width: 251px;
-    height: 50px
+    height: 100%;
 }
 span.news-item-meta {}
 span.news-item-count-num {
@@ -270,7 +286,9 @@ span.news-item-count {
 }
 a.module-item.mod-featured {
     background: var(--tf2stream);
-    border-left: solid 3px var(--hlcolour)!important
+    border-left: solid 3px var(--hlcolour)!important;
+    border-bottom: solid 1px var(--tf2streamborder);
+    /* inset box shadow */
 }
 a:link,
 a:visited,
@@ -284,7 +302,17 @@ a.stream-box {}
     height: 30px;
     text-align: left;
     padding-left: 3px;
+    border-bottom: 0px !important;
+    box-shadow: 0 0 0 0;
+}
+module-header:hover {
+    background: var(--transparent) !important;
+    background-color: var(--transparent) !important;
+    height: 30px;
+    text-align: left;
+    padding-left: 3px;
     border: 0;
+    border-bottom: 0px !important;
     box-shadow: 0 0 0 0;
 }
 #h-s-header {
@@ -308,11 +336,16 @@ a.stream-box {}
 .list-table tr:last-child td:last-child {
     border-bottom: 1px solid #5b6167;
 }
+
 #schedule-table td:first-child {
     border-bottom: 1px solid #5b6167;
 }
+#gallery-name {
+    color: var(--textcolour2);
+}
 #schedule-table td {
     border-bottom: 1px solid #5b6167;
+    border-right: 1px solid #5b6167;
 }
 .list-table td {
     border-bottom: 1px solid #5b6167;
@@ -334,9 +367,21 @@ a.module-item {
     border-bottom: 1px solid #4c545d;
     box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.4);
 }
-a.module-item:nth-child(2n) {}
+a.module-item:hover {
+    line-height: 22px;
+    background: var(--sbhover);
+    border-bottom: 1px solid #4c545d;
+    box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.4);
+}
+a.module-item > :first-child {
+    border-radius: 3px;
+}
 .module-item.mod-last {
     border-radius: 0;
+}
+.module-item.mod-last:hover {
+    border-radius: 0;
+    border-bottom: 0;
 }
 .thread-header-title {
     color: var(--textcolour);
@@ -352,7 +397,8 @@ div.thread-inner {
     border-top: 1px solid var(--bordercolour);
 }
 div.thread {
-    height: 50px;
+    min-height: 50px;
+    height: auto;
     margin-bottom: 2px;
     font-family: 'Roboto', sans-serif;
     font-size: 12px;
@@ -371,20 +417,24 @@ div.blockr.pages {
 .block.frag .frag-count {
     color: var(--sbtextcolour);
 }
+.thread-frag-btn.plus #thread-frag-count {
+    background: var(--fragcount);
+}
 div.blockr.last-info {
     font-size: 12px;
     border: 0;
     margin-top: 5px;
     padding-right: 6px;
-    width: 130px;
+    height: 100% !important;
 }
 div.post-body {
     background: var(--postbg);
-    color: var(--textcolour2);
+    color: var(--textcolour2) !important;
 }
 div.post-footer {
     background: var(--postbg);
     color: var(--sbtextcolour);
+    border: 0;
 }
 .btn,
 a.btn {
@@ -393,12 +443,53 @@ a.btn {
 
     line-height: 42px;
     font-size: 11px;
-    box-shadow: 0 1px 3px -1px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 1px 3px -1px rgba(0, 0, 0, 0.4) !important;
     border-radius: 3px;
     border: 0;
     background: var(--btncolour);
     color: var(--textcolour2);
     position: relative;
+}
+.btn::before {
+    background: var(--btnaccent);
+    top: 0px;
+    left: 1px;
+    height: 1px;
+    width: calc(100% - 2px);
+    position: absolute;
+    content: '';
+    border-top-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+.btn.is-clicked {
+    background: var(--btncolour) !important;
+    box-shadow: inset 0 0 1px 1px rgba(0, 0, 0, 0.25) !important;
+}
+.btn.is-clicke:hover {
+    background: var(--btncolour2) !important;
+    box-shadow: inset 0 0 1px 1px rgba(0, 0, 0, 0.25) !important;
+}
+.btn:focus:hover {
+    background: var(--btncolour) !important;
+}
+.btn.is-clicked::before {
+    width: 0;
+}
+.btn:not(.mod-active):active {
+    background: var(--btncolour) !important;
+}
+.btn:hover {
+    background: var(--btncolour2) !important;
+}
+.btn.mod-active {
+    background: var(--btncolour2) !important;
+}
+.btn.mod-action {
+    border: 0;
+}
+.btn.mod-action:hover,
+.btn.mod-action:focus {
+    border: 0;
 }
 div.post {
     background: var(--postbg);
@@ -467,6 +558,9 @@ span.module-item-title-sub {
 .stream-name {
     color: var(--sbtextcolour);
 }
+.stream-title {
+    color: var(--sbtextcolour);
+}
 .card {
     background: var(--article);
     border: 0;
@@ -482,10 +576,12 @@ div.post-header {
     background: var(--postheader);
     color: var(--textcolour2);
     height: 35px;
+    padding-top: 11px;
 }
 a.post-author {
     color: var(--textcolour);
     font-weight: 500;
+    font-size: 12px;
 }
 div.post {
     border: 0;
@@ -495,8 +591,24 @@ div.post {
 .post-body p {
     color: var(--textcolur2);
 }
+.post-body q {
+    border: 0;
+    border-left: 2px solid var(--textcolour);
+    color: var(--textcolour);
+    background: var(--btncolour);
+}
 div#thread-container {
     border: 0;
+}
+#post-editor {
+    color: var(--textcolour2);
+}
+#post-editor-header {
+    background: var(--postheader);
+    color: var(--textcolour2);
+}
+#post-editor-text {
+    color: var(--textcolour2);
 }
 /*div#article-wrapper {
     background: #fff;
@@ -523,15 +635,27 @@ div.thread-header {
 .block.main {
     padding-top: 2px;
 }
+.block.main .tag {
+    float: none;
+}
+.block.main .tag::after {}
+.block.main .description {
+    padding-bottom: 7px;
+}
+
 .block.main .title {
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
+    display: inline-block;
 }
 .block.frag {
     margin-top: 5px;
 }
 .module-item-count {
     font-size: 12px;
+}
+.profile-table td {
+    color: var(--textcolour2) !important;
 }
 input[type="text"],
 input[type="search"],
@@ -544,6 +668,42 @@ textarea {
 }
 #search-bar {
     color: var(--textcolour2)
+}
+span.tag::after {
+    content: '\A';
+    white-space: pre;
+}
+.filter-menu {
+    background: var(--dropdown);
+    border: 0;
+    box-shadow: 0 0.5px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 2px;
+    width: auto;
+    height: auto;
+    padding: 5px 0;
+}
+.filter-menu a {
+    line-height: 1;
+    padding: 10px 15px;
+    font-size: 11px;
+}
+.filter-menu a:hover {
+    background: var(--dropdownhover);
+    line-height: 1;
+    padding: 10px 15px;
+    font-size: 11px;
+}
+.game-stats tr td {
+    background: var(--bgcolour);
+    color: var(--textcolour);
+    border: 0;
+}
+.game-stats tr.odd td {
+    background: var(--mgcolour);
+    color: var(--textcolour);
+}
+.vs-info {
+    color: var(--textcolour);
 }
 .fa-home {}
 }
