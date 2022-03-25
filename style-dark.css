@@ -15,8 +15,8 @@
     --tablebgcolour: #40474f;
     --transparent: #0000;
     --article: #40474f;
-    --upvote: #00ff00;
-    --downvote: #ff0000;
+    --upvote: #76bc87;
+    --downvote: #c76b6b;
     --redteam: #c64446;
     --blueteam: #5885a2;
     --tableheader: #2e506b;
@@ -121,10 +121,20 @@ td.player {
 .game-switch.active {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4) !important;
     background: var(--article);
+    border-top-width: 2px;
+    border-top-style: solid;
+    border-top-color: #4c545d;
 }
 .game-switch.active::after {
     background: var(--article);
 }
+/*.game-switch.active::before{
+    content: '';
+    background: #4c545d;  
+    display: block;
+    height: 1px;
+    width: 100%;  
+}*/
 .vod-btn:hover,
 .vod-btn-spoiler:hover {
     border: 0;
@@ -160,7 +170,6 @@ div #content {
     border: 0;
 }
 #wrapper {
-    top: 1px;
     background-color: var(--mgcolour);
     background: var(--mgcolour) !important;
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.22);
@@ -172,6 +181,10 @@ a.main-feature {
 .header {
     background: var(--nbcolour);
     background-color: var(--nbcolour);
+    z-index: 1;
+}
+.footer {
+    z-index: 1;
 }
 div.header-nav-item {
     padding-top: 6px;
@@ -275,6 +288,9 @@ td {
     1px 0px 3px #000000d1,
     -1px 0px 3px #000000d1;
 }
+img {
+    background: var(--mgcolour);
+}
 #main-feature-desc {
     color: var(--textcolour2);
     text-shadow: -1px 0px 2px #000000d1,
@@ -327,8 +343,12 @@ td {
     height: 50px;
     border-bottom: 1px solid var(--bordercolour);
     margin-left: -10px;
+    margin-right: -10px;
     padding-left: 15px;
     padding-top: 10px;
+}
+#article-list li:hover {
+    background: var(--btncolour);
 }
 #article-list a {
     color: var(--textcolour2) !important;
@@ -468,7 +488,7 @@ a.module-item {
     line-height: 22px;
     background: var(--sbcolour);
     border-bottom: 1px solid #4c545d;
-    box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 1px 2px 1px rgba(0, 0, 0, 0.4);
 }
 a.module-item:hover {
     line-height: 22px;
@@ -479,10 +499,7 @@ a.module-item:hover {
 a.module-item > :first-child {
     border-radius: 3px;
 }
-.module-item.mod-last {
-    border-radius: 0;
-}
-.module-item.mod-last:hover {
+e-item.mod-last:hover {
     border-radius: 0;
     border-bottom: 0;
 }
@@ -496,6 +513,7 @@ a.module-item > :first-child {
     color: var(--textcolour);
     display: block;
     padding-left: 25px;
+    padding-bottom: 22px;
 }
 div#thread-list {
     width: 760px;
@@ -650,7 +668,8 @@ table.list-table {
 }
 .forum-header {
     color: var(--textcolour);
-    padding: 5px;
+    padding: 15px;
+    padding-bottom: 7px;
 }
 .block.sub {
     padding-left: 6px;
@@ -677,6 +696,7 @@ div.forum-container {
     background: var(--fgcolour);
     width: 100%;
     margin-left: 0;
+    margin-top: 0;
     padding: 0px;
     padding-bottom: 3px;
     border-radius: 3px 3px 3px 3px;
@@ -802,19 +822,33 @@ div.thread-header {
     margin: 0;
     margin-top: 20px;
     margin-bottom: 20px;
-
-    height: 84px;
+    height: auto;
+    min-height: 84px;
     box-shadow: 0 1px 3px -1px rgba(0, 0, 0, 0.4);
 }
 div.thread-header::before {
     content: '';
-    background: var(--btnaccent);
+    background: #4c545d;
+    display: block;
+    height: 1px;
+    width: 100%;
+}
+div.thread.first::before {
+    content: '';
+    background: #4c545d;
+    display: block;
+    height: 1px;
+    width: 100%;
+}
+#event-container.card::before {
+    content: '';
+    background: #4c545d;
     display: block;
     height: 1px;
     width: 100%;
 }
 .clearfix {
-    padding-bottom: 5px;
+    margin-bottom: 10px !important;
 }
 .block.main {
     padding-top: 1px;
@@ -828,9 +862,11 @@ div.thread-header::before {
 }
 .block.main .tag::after {}
 .block.main .description {
-    padding-bottom: 7px;
+    padding-bottom: 13px;
 }
-
+.header-banner-inner {
+    height: 0;
+}
 .block.main .title {
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
@@ -916,4 +952,45 @@ span.tag::after {
     color: var(--textcolour2);
 }
 .fa-home {}
+.block.frag i {
+    font-size: 22px;
+}
+.fa-long-arrow-up::before {
+    content: "\f0d8";
+}
+.block.frag .plus-frag {
+    height: auto;
+    min-height: 22px;
+}
+.block.frag .minus-frag {
+    height: auto;
+    min-height: 22px;
+}
+.fa-long-arrow-down::before {
+    content: "\f0d7";
+}
+.block.frag .minus-frag i {
+    top: 0;
+}
+.frag-container {
+    margin-top: 0px !important;
+    margin-right: 10px;
+}
+.frag-count {
+    font-size: 11px !important;
+    line-height: 1;
+    margin-top: -7px !important;
+}
+.plus-frag.clicked i {
+    color: var(--upvote);
+}
+.minus-frag.clicked i {
+    color: var(--downvote);
+}
+.block.frag.minused .frag-count {
+    color: var(--textcolour);
+}
+.block.frag.plused .frag-count {
+    color: var(--textcolour);
+}
 }
