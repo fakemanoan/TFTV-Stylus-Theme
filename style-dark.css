@@ -1,4 +1,3 @@
-@-moz-document domain("teamfortress.tv") {
 :root {
     --bgcolour: #232529;
     --mgcolour: #2f3337;
@@ -11,6 +10,7 @@
     --hlcolour: #3e92da;
     --textcolour: #c1c1c1;
     --textcolour2: #d4d4d4;
+    --textcolour3: #fff;
     --sbtextcolour: #b4b4b4;
     --tablebgcolour: #40474f;
     --transparent: #0000;
@@ -30,43 +30,19 @@
     --btncolour: #394046;
     --btnaccent: #454c54;
     --btncolour2: #40474f;
+    --btnmodaction: #d04e59;
+    --btnmodactionhover: #db767e;
     --fragcount: #22262a;
     --bordercolour: #5b6167;
     --searchbg: #535c65;
-    --textarea: #40474f;
+    --textarea: #535c65;
     --textareafocus: #40474f;
     --dropdown: #313131;
     --dropdownhover: #444444;
-
-    --tftv-bg: /*[[bg1]]*/;
-    /* default: #232529 */
-    --tftv-fg: /*[[bg2]]*/;
-    /* default: #34363d */
-    --tftv-hover: /*[[bg3]]*/;
-    /* default: #3E4047 */
-    --tftv-other: /*[[bg4]]*/;
-    /* default: #494b52 */
-    --tftv-highlight: /*[[bg5]]*/;
-    /* default: #3e92da */
-    --tftv-text: /*[[bg6]]*/;
-    /* default: #c1c1c1 */
-    --tftv-text-secondary: /*[[bg7]]*/;
-    /* default: #808080 */
-    --tftv-text-highlight: /*[[bg8]]*/;
-    /* default: #FFF */
-    --tftv-text-groupplus: /*[[bg9]]*/;
-    /* default: #00bbff */
-    --tftv-text-live: /*[[bg10]]*/;
-    /* default: #15bb20 */
-    --tftv-team-red: /*[[bg11]]*/;
-    /* default: #c64446 */
-    --tftv-team-blu: /*[[bg12]]*/;
-    /* default: #5885a2 */
-    --tftv-box-shadow: rgba(0, 0, 0, 0.4);
-    --tftv-text-shadow: rgba(0, 0, 0, 0.04);
-
-    --tftv-lighten: rgba(250, 250, 250, 0.02);
-    --tftv-darken: rgba(0, 0, 0, 0.04);
+}
+tr td {
+    background: var(--btncolour) !important;
+    color: var(--textcolour) !important;
 }
 .game-switch {
     border: 0;
@@ -178,6 +154,9 @@ a.main-feature {
     border: 0;
     box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.4);
 }
+#main-feature {
+    margin-bottom: 4px !important;
+}
 .header {
     background: var(--nbcolour);
     background-color: var(--nbcolour);
@@ -188,6 +167,9 @@ a.main-feature {
 }
 div.header-nav-item {
     padding-top: 6px;
+}
+select:focus {
+    background: var(--btncolour2);
 }
 .header-nav-container {
     background: var(--nbcolour);
@@ -265,7 +247,7 @@ td {
     margin-top: -20px;
     padding: 0px 30px;
     padding-bottom: 12px;
-    box-shadow: 0 2px 4px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 3px -1px rgba(0, 0, 0, 0.4);
     background: var(--fgcolour);
 }
 #main-feature img {
@@ -356,7 +338,7 @@ img {
     padding: 0;
 }
 #features-container {
-    width: 425px;
+    width: 425px !important;
 }
 div#article-list {
     width: 325px;
@@ -372,6 +354,7 @@ span {}
 .form-label {
     padding-top: 5px;
     color: var(--textcolour2);
+    font-size: 12pt;
 }
 .form-hint {
 
@@ -391,6 +374,9 @@ span.news-item-meta {}
 span.news-item-count-num {
     color: var(--textcolour);
     font-weight: normal;
+    text-align: right;
+    font-size: 12px;
+    padding-right: 12px;
 }
 span.news-item-count {
     float: right;
@@ -417,6 +403,8 @@ a.stream-box {}
     padding-left: 3px;
     border-bottom: 0px !important;
     box-shadow: 0 0 0 0;
+    z-index: auto;
+    text-shadow: 0 0 0;
 }
 module-header:hover {
     background: var(--transparent) !important;
@@ -499,6 +487,10 @@ a.module-item:hover {
 a.module-item > :first-child {
     border-radius: 3px;
 }
+a.module-item.mod-last {
+    border-bottom: 0;
+    border-radius: 0;
+}
 e-item.mod-last:hover {
     border-radius: 0;
     border-bottom: 0;
@@ -528,6 +520,7 @@ div.thread-inner {
 }
 .action-container {
     margin-top: 2px;
+    margin-bottom: 10px;
 }
 div.thread {
     min-height: 56px;
@@ -540,6 +533,9 @@ div.thread {
 div.thread:hover {
     background: var(--searchbg);
 }
+#search-bar {
+    height: 42px;
+}
 div.blockr.pages {
     font-size: 12px;
     width: 150px;
@@ -548,10 +544,14 @@ div.blockr.pages {
     color: var(--textcolour);
 }
 .blockr.pages .post-count {
-    color: var(--textcolour);
+    color: var(--textcolour) !important;
 }
 .block.frag .frag-count {
     color: var(--sbtextcolour);
+    font-weight: normal;
+}
+.blockr.post-count {
+    color: var(--textcolour2) !important;
 }
 .thread-frag-btn.plus #thread-frag-count {
     background: var(--fragcount);
@@ -622,14 +622,18 @@ a.btn {
 }
 .btn:not(.mod-active):active {
     background: var(--btncolour2);
+    box-shadow: inset 0 0 1px 1px rgba(0, 0, 0, 0.45);
 }
 .btn.mod-action:hover,
 .btn.mod-action:focus {
-    background: var(--btncolour);
+    background: var(--btnmodactionhover) !important;
+}
+.btn.mod-action::before {
+    height: 0 !important;
 }
 .btn.mod-action {
-    background: var(--btncolour);
-    color: var(--textcolour2);
+    background: var(--btnmodaction) !important;
+    color: var(--textcolour3);
 }
 .btn.mod-active:hover {
     box-shadow: inset 0 0 1px 1px rgba(0, 0, 0, 0.25) !important;
@@ -663,8 +667,19 @@ div.post {
 table.list-table {
     box-shadow: 0 0 6px rgba(0, 0, 0, 0.22);
 }
+div.forum-container::before {
+    content: '';
+    background: #4c545d;
+    display: block;
+    height: 1px;
+    width: 100%;
+}
 .forum-group-header {
     color: var(--textcolour);
+    font-weight: 500;
+    font-size: 18px;
+    margin-left: 17px;
+    text-transform: none;
 }
 .forum-header {
     color: var(--textcolour);
@@ -679,12 +694,20 @@ table.list-table {
     border: 0;
     box-shadow: 0 0 0;
     border-radius: 0;
+
+    color: var(--textcolour2);
+}
+.sub-btn .fa {
+    font-size: 16px;
+    width: 16px;
+    height: 16px;
 }
 .sub-btn.active {
     background: transparent;
     border: 0;
     box-shadow: 0 0 0;
     border-radius: 0;
+    color: var(--hlcolour);
 }
 i.fa-check {
     text-shadow: -1px 0px 1px #00000029,
@@ -697,15 +720,16 @@ div.forum-container {
     width: 100%;
     margin-left: 0;
     margin-top: 0;
+    margin-bottom: 22px;
     padding: 0px;
-    padding-bottom: 3px;
-    border-radius: 3px 3px 3px 3px;
+    padding-bottom: 0px;
     box-shadow: 0 0 6px rgba(0, 0, 0, 0.22);
 }
 div.subforum {
     margin: 0px;
     height: 60px;
-
+    padding-right: 15px;
+    padding-left: 10px;
     border-top: 1px solid var(--border);
     font-size: 12px;
 }
@@ -713,7 +737,10 @@ div.subforum:hover {
     background: var(--searchbg);
 }
 a.subforum-title {
-    font-size: 14px;
+    font-size: 13px;
+    font-weight: 500;
+    display: inline-block;
+    margin-bottom: 5px;
 }
 div.blockr.last-info {
     width: 140px;
@@ -722,14 +749,20 @@ div.blockr.last-info {
 span.js-date-toggle {
     padding-top: 2px;
 }
-div.subforum.first {
-    margin-top: 2px;
+input[type="search"]:focus {
+    background: var(--textareafocus) !important;
+    border: 1px solid #85b6e0 !important;
 }
 input[type="text"],
 input[type="search"],
 select,
 textarea {
     margin-bottom: 0;
+    color: var(--textcolour3);
+}
+.form-hint {
+    color: var(--textcolour2);
+    font-size: 12px;
 }
 span.module-item-flag {
     margin-top: 7px;
@@ -756,7 +789,7 @@ span.module-item-title-sub {
     box-shadow: 0 1px 3px -1px rgba(0, 0, 0, 0.4);
 }
 span.module-item-icon {
-    margin-top: 7px;
+    margin-top: 4px;
 }
 span.module-item-status {
     margin-top: 7px;
@@ -883,13 +916,21 @@ div.thread.first::before {
 .profile-table td {
     color: var(--textcolour2) !important;
 }
+td {
+    color: var(--textcolour2) !important;
+}
+.v-form-area {
+    margin-bottom: 10px !important;
+}
+#inbox-used-storage {
+    color: var(--textcolour2) !important;
+}
 input[type="text"],
 input[type="search"],
 select,
 textarea {
     background: var(--textarea);
     border: 1px solid #535c65;
-
     box-shadow: 0 1px 3px -1px rgba(0, 0, 0, 0.5);
 }
 textarea:focus {
@@ -944,9 +985,12 @@ span.tag::after {
     color: var(--textcolour);
 }
 .gallery-info {
-    background: var(--fgcolour);
+    background: var(--btncolour);
     color: var(--textcolour);
     box-shadow: 0 0.5px 2px rgba(0, 0, 0, 0.4);
+}
+.gallery-block-wrapper a.gallery-block:hover .gallery-info {
+    background: var(--btncolour2);
 }
 .gallery-name {
     color: var(--textcolour2);
@@ -993,4 +1037,16 @@ span.tag::after {
 .block.frag.plused .frag-count {
     color: var(--textcolour);
 }
+.module-item-icon.mod-tf2 {
+    background: no-repeat url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64.000001 64.000001"><path d="M31.82 1.623a30.81 30.81 0 0 0-5.338.473c1.066 4.038 2.633 9.922 4.727 17.736a12.5 12.5 0 0 1 .736-.025 12.5 12.5 0 0 1 11.108 6.771 64847.49 64847.49 0 0 0 17.666-4.756A30.81 30.81 0 0 0 31.82 1.623zm-10.853 1.99A30.81 30.81 0 0 0 1.01 32.433a30.81 30.81 0 0 0 .45 5.247c1.1-.257 8.502-2.227 18.007-4.772a12.5 12.5 0 0 1-.022-.601 12.5 12.5 0 0 1 6.465-10.932L20.967 3.613zM62.096 26.81l-17.668 4.918a12.5 12.5 0 0 1 .02.58 12.5 12.5 0 0 1-6.89 11.166l4.815 17.879a30.81 30.81 0 0 0 20.256-28.918 30.81 30.81 0 0 0-.533-5.625zM20.965 38.256L2.99 43.26a30.81 30.81 0 0 0 28.83 19.982 30.81 30.81 0 0 0 5.407-.486l-.104-1.092-4.695-16.875a12.5 12.5 0 0 1-.483.018 12.5 12.5 0 0 1-10.98-6.551z" opacity=".643" fill="%239d5422"/></svg>');
+    background-size: contain
+}
+.module-item-icon.mod-csgo {
+    background: no-repeat url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"><path d="M31.941 47.03c-.247-.071-1.041-.518-1.763-.992-1.569-1.031-1.725-1.306-1.725-3.049 0-.79-.09-1.464-.264-1.974-.145-.426-.58-2.061-.967-3.634l-.703-2.86-1.095-1.165c-.602-.641-1.273-1.448-1.49-1.794-.707-1.125-2.061-2.829-2.536-3.191a4.238 4.238 0 0 0-.862-.505c-.334-.127-.412-.111-.483.097-.046.137-.309.732-.584 1.323-.821 1.765-1.397 3.274-1.886 4.94a27.215 27.215 0 0 1-1.156 3.079 90.108 90.108 0 0 0-1.149 2.598c-.518 1.247-.555 1.266-2.343 1.27-1.371 0-1.416.043-1.16 1.01.257.964.269 1.635.033 1.812-.248.186-1.683.53-2.084.501-.47-.034-1.538-.975-1.8-1.585a8.906 8.906 0 0 1-.378-1.162 9.907 9.907 0 0 0-.306-1.03c-.213-.546.294-1.569 1.597-3.22.886-1.124 1.149-1.361 1.801-1.625.42-.171.833-.394.919-.497.085-.103.376-1.134.646-2.292.478-2.047 1.111-4.245 2.138-7.423l.502-1.553-.283-.805c-.316-.899-.352-1.349-.139-1.747.11-.205.088-.301-.09-.4-.212-.119-.185-.334.28-2.263.626-2.598.898-4.178 1.105-6.42l.157-1.711.879-1.225c1.095-1.525 2.413-2.871 2.811-2.871.275 0 .298-.082.298-1.048 0-1.493.314-2.423 1.072-3.182 1.379-1.379 3.648-1.366 4.969.028.392.413 1.261 2.275 1.261 2.7 0 .128-.165.515-.368.86-.243.415-.352.787-.322 1.1.07.731.619.719 1.573-.035.651-.515.826-.587 1.28-.526.368.049.649-.012.935-.199.591-.39.86-.345.961.16.123.616.56.728 2.654.682 1.717-.038 1.813-.057 1.947-.362.078-.177.255-.322.394-.322.193 0 .252.118.252.501 0 .276.048.508.107.516 1.282.173 1.897.095 1.897-.243 0-.136.097-.203.251-.171a.255.255 0 0 1 .209.293c-.052.303.396.426 1.339.366.651-.041.71-.075.752-.439.073-.636.417-.466.579.286.09.419.094.698.012.728-.232.083-.146.437.143.592.152.082.438.148.636.148.366 0 .617.209.408.338-.064.04-.897.108-1.852.152-.955.044-1.896.141-2.092.216-.46.175-.95.692-1.13 1.191-.078.216-.228.394-.334.394-.106 0-.293.143-.415.318-.219.313-.229.314-.662.058-.242-.143-.48-.22-.53-.17-.229.229.274 2.056.917 3.335.658 1.308.674 1.368.412 1.559-.15.109-.353.199-.451.199-.277 0-.847-1.051-1.573-2.9-.363-.925-.717-1.683-.785-1.683-.068 0-.084.385-.035.856.11 1.057.048 1.092-1.389.788l-1.067-.226-.408.472c-1.235 1.429-1.377 1.546-1.877 1.546-.27 0-.53.063-.578.141-.048.077-.229.134-.402.124-.173-.01-.567.094-.875.229-.426.186-.757.222-1.384.149-1.074-.125-1.421.163-1.423 1.182a14.794 14.794 0 0 1-.092 1.432c-.078.652-.132.752-.406.752-.174 0-.433.129-.575.287-.227.251-.243.407-.13 1.253l.13.966.445-.042c.341-.032.498.04.675.309.127.193.943 1.208 1.814 2.256 1.774 2.134 2.13 2.849 1.601 3.218-.439.308-.386.8.158 1.451.258.308.784 1.039 1.169 1.624l1.25 1.898c.487.739.549.934.55 1.718.001.486.168 1.593.373 2.46.273 1.158.379 2.03.402 3.293.034 1.896.039 1.911 1.286 3.931.581.941.659 1.164.659 1.883 0 .786-.016.822-.451.973-.527.184-1.157.184-1.789 0zm-5.113-35.576c.122-.318.72-.59 1.695-.77.804-.149 1.379-.472 1.185-.666-.048-.048-.601-.123-1.229-.166l-1.141-.079-.795.628c-.437.346-.799.699-.803.785-.008.164.502.461.82.477.101.01.221-.089.268-.21" fill="%23fff"/></svg>');
+    background-size: contain;
+    opacity: 0.75
+}
+.module-item-icon.mod-dota2 {
+    background: no-repeat url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"><path d="M1.685 23.81v-22h44.594v44H1.685v-22m14.429 14.963l2.834-.999-4.462-4.432c-2.782-2.764-4.665-4.217-5-3.86-.297.315-1.151 2.01-1.898 3.771l-1.357 3.199 2.039 1.691c2.322 1.926 3.83 2.047 7.846.631m23.622-3.359c.706-2.12 1.196-4.255 1.089-4.742-.107-.488-7.092-5.548-15.523-11.245C10.133 9.177 9.953 9.076 7.897 9.707c-1.142.351-2 .819-1.914 1.04.09.222 6.184 6.73 13.542 14.463l13.378 14.06h5.552l1.283-3.856m-2.126-21.2c.365-2.533.266-2.851-1.225-3.938-1.62-1.18-1.628-1.18-5.175.018l-3.553 1.2 1.491 1.086c.82.597 2.803 2.14 4.406 3.429 3.224 2.591 3.437 2.496 4.056-1.795" fill="%23ad2f18"/></svg>');
+    opacity: 0.75
 }
