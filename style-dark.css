@@ -7,6 +7,7 @@
     --sbcolour2: #eaeaea;
     --sbhover: #434A51;
     --sbtitle: #e3e3e3;
+    --linkcolour: #9ccbe2;
     --hlcolour: #3e92da;
     --textcolour: #c1c1c1;
     --textcolour2: #d4d4d4;
@@ -40,6 +41,20 @@
     --dropdown: #313131;
     --dropdownhover: #444444;
 }
+#post-loading {
+    background: var(--mgcolour);
+}
+.form-label-radio {
+    background: var(--sbcolour);
+    color: var(--textcolour2);
+    border-color: var(--bordercolour);
+}
+input[type="radio"]:checked + label {
+    background: var(--btncolour2);
+    color: var(--textcolour3);
+    border-color: var(--btnaccent);
+    box-shadow: 0 1px 13px -1px rgb(0, 0, 0, 0.4);
+}
 tr td {
     background: var(--btncolour);
     color: var(--textcolour) !important;
@@ -55,7 +70,7 @@ span.star-0 {
     background-repeat: no-repeat;
 }
 span.star-2 {
-    background-image: url('data:image/svg+xml,%3C%3Fxml version="1.0" encoding="UTF-8"%3F%3E%3Csvg width="80mm" height="77.472mm" version="1.1" viewBox="0 0 80 77.472" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"%3E%3Cdefs%3E%3CradialGradient id="a" cx="73.061" cy="71.431" r="24.723" gradientTransform="matrix(-.041849 1.9306 -1.8914 -.04096 192.24 -59.468)" gradientUnits="userSpaceOnUse"%3E%3Cstop stop-color="%23fff" offset="0"/%3E%3Cstop stop-color="%23fff" stop-opacity="0" offset="1"/%3E%3C/radialGradient%3E%3Cfilter id="b" x="-.057106" y="-.059673" width="1.1142" height="1.1193" color-interpolation-filters="sRGB"%3E%3CfeGaussianBlur stdDeviation="1.1765035"/%3E%3C/filter%3E%3CclipPath id="c"%3E%3Crect x="10.99" y="69.852" width="88.474" height="48.006" rx=".58399" ry="3.7595" fill="%23d6d6d6" opacity=".78327" stroke-width=".26586"/%3E%3C/clipPath%3E%3C/defs%3E%3Cg transform="translate(-.73223 -1.0204)" stroke-width=".26458"%3E%3Cpath transform="matrix(.9904 0 0 1 -13.044 -39.045)" d="m78.371 117.12c-4.609 3.2263-19.04-13.427-24.665-13.526-5.6252-0.099-20.633 16.036-25.125 12.65s6.8864-22.257 5.2423-27.637c-1.6441-5.3804-21.627-14.667-19.795-19.986 1.8324-5.3193 23.296-0.32841 27.905-3.5547 4.609-3.2263 7.2661-25.101 12.891-25.002 5.6252 0.09897 7.5111 22.054 12.004 25.44s26.118-0.84627 27.762 4.5341c1.6441 5.3804-18.653 13.958-20.486 19.278s8.8758 24.578 4.2668 27.805z" fill="%23d6d6d6"/%3E%3Cpath transform="matrix(.9904 0 0 1 -13.044 -39.045)" d="m78.371 117.12c-4.609 3.2263-19.04-13.427-24.665-13.526-5.6252-0.099-20.633 16.036-25.125 12.65s6.8864-22.257 5.2423-27.637c-1.6441-5.3804-21.627-14.667-19.795-19.986 1.8324-5.3193 23.296-0.32841 27.905-3.5547 4.609-3.2263 7.2661-25.101 12.891-25.002 5.6252 0.09897 7.5111 22.054 12.004 25.44s26.118-0.84627 27.762 4.5341c1.6441 5.3804-18.653 13.958-20.486 19.278s8.8758 24.578 4.2668 27.805z" clip-path="url(%23c)" fill="%23005fee"/%3E%3Cpath transform="translate(-13.804 -38.184)" d="m69.406 101.51c-2.972 2.1171-11.511-8.1177-15.159-8.1519-3.6488-0.03418-12.378 10.039-15.309 7.8665-2.9319-2.1724 4.1634-13.456 3.0684-16.936-1.095-3.4808-13.372-8.6695-12.212-12.129 1.1601-3.4597 14.084-0.19837 17.056-2.3154 2.972-2.1171 4.1129-15.397 7.7617-15.363 3.6488 0.03418 4.5408 13.333 7.4726 15.505 2.9319 2.1724 15.914-0.84629 17.009 2.6345 1.095 3.4808-11.277 8.4387-12.437 11.898-1.1601 3.4597 5.7227 14.874 2.7506 16.991z" fill="url(%23a)" filter="url(%23b)" opacity=".78327"/%3E%3C/g%3E%3C/svg%3E%0A');
+    background-image: url('data:image/svg+xml,%3C%3Fxml version="1.0" encoding="UTF-8"%3F%3E%3Csvg width="80mm" height="77.472mm" version="1.1" viewBox="0 0 80 77.472" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"%3E%3Cdefs%3E%3CradialGradient id="a" cx="73.061" cy="71.431" r="24.723" gradientTransform="matrix(-.041849 1.9306 -1.8914 -.04096 192.24 -59.468)" gradientUnits="userSpaceOnUse"%3E%3Cstop stop-color="%23fff" offset="0"/%3E%3Cstop stop-color="%23fff" stop-opacity="0" offset="1"/%3E%3C/radialGradient%3E%3Cfilter id="b" x="-.057106" y="-.059673" width="1.1142" height="1.1193" color-interpolation-filters="sRGB"%3E%3CfeGaussianBlur stdDeviation="1.1765035"/%3E%3C/filter%3E%3CclipPath id="c"%3E%3Crect x="15.078" y="74.19" width="80.298" height="43.668" rx=".58399" ry="3.7595" fill="%23d6d6d6" opacity=".78327" stroke-width=".26586"/%3E%3C/clipPath%3E%3C/defs%3E%3Cg transform="translate(-.73223 -1.0204)" stroke-width=".26458"%3E%3Cpath transform="matrix(.9904 0 0 1 -13.044 -39.045)" d="m78.371 117.12c-4.609 3.2263-19.04-13.427-24.665-13.526-5.6252-0.099-20.633 16.036-25.125 12.65s6.8864-22.257 5.2423-27.637c-1.6441-5.3804-21.627-14.667-19.795-19.986 1.8324-5.3193 23.296-0.32841 27.905-3.5547 4.609-3.2263 7.2661-25.101 12.891-25.002 5.6252 0.09897 7.5111 22.054 12.004 25.44s26.118-0.84627 27.762 4.5341c1.6441 5.3804-18.653 13.958-20.486 19.278s8.8758 24.578 4.2668 27.805z" fill="%23d6d6d6"/%3E%3Cpath transform="matrix(.9904 0 0 1 -13.044 -39.045)" d="m78.371 117.12c-4.609 3.2263-19.04-13.427-24.665-13.526-5.6252-0.099-20.633 16.036-25.125 12.65s6.8864-22.257 5.2423-27.637c-1.6441-5.3804-21.627-14.667-19.795-19.986 1.8324-5.3193 23.296-0.32841 27.905-3.5547 4.609-3.2263 7.2661-25.101 12.891-25.002 5.6252 0.09897 7.5111 22.054 12.004 25.44s26.118-0.84627 27.762 4.5341c1.6441 5.3804-18.653 13.958-20.486 19.278s8.8758 24.578 4.2668 27.805z" clip-path="url(%23c)" fill="%23005fee"/%3E%3Cpath transform="translate(-13.804 -38.184)" d="m69.406 101.51c-2.972 2.1171-11.511-8.1177-15.159-8.1519-3.6488-0.03418-12.378 10.039-15.309 7.8665-2.9319-2.1724 4.1634-13.456 3.0684-16.936-1.095-3.4808-13.372-8.6695-12.212-12.129 1.1601-3.4597 14.084-0.19837 17.056-2.3154 2.972-2.1171 4.1129-15.397 7.7617-15.363 3.6488 0.03418 4.5408 13.333 7.4726 15.505 2.9319 2.1724 15.914-0.84629 17.009 2.6345 1.095 3.4808-11.277 8.4387-12.437 11.898-1.1601 3.4597 5.7227 14.874 2.7506 16.991z" fill="url(%23a)" filter="url(%23b)" opacity=".78327"/%3E%3C/g%3E%3C/svg%3E%0A');
     background-size: 12px 11px;
     background-repeat: no-repeat;
 }
@@ -586,7 +601,7 @@ div.blockr.pages {
 div.blockr.last-info {
     font-size: 12px;
     border: 0;
-    margin-top: 5px;
+    margin-top: 7px;
     padding-right: 6px;
     height: 100% !important;
 }
@@ -609,7 +624,7 @@ a.btn {
     border-radius: 3px;
     border: 0 !important;
     background: var(--btncolour);
-    color: var(--textcolour2);
+    color: var(--linkcolour);
     position: relative;
 }
 .btn:not(.clicked):not(:active)::before {
@@ -676,6 +691,7 @@ a.btn {
 }
 .btn.mod-active {
     background: var(--btncolour2);
+    color: var(--textcolour2);
 }
 .btn.mod-action {
     border: 0;
@@ -912,6 +928,7 @@ div.thread.first::before {
 }
 .block.main {
     padding-top: 1px;
+    margin-top: 12px;
 }
 .block.main .tag {
     float: none;
