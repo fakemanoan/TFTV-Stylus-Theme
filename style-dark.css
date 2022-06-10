@@ -30,8 +30,8 @@
     --btncolour: #394046;
     --btnaccent: #454c54;
     --btncolour2: #40474f;
-    --btnmodaction: #d04e59;
-    --btnmodactionhover: #db767e;
+    --btnmodaction: #417aaa;
+    --btnmodactionhover: #6298c7;
     --fragcount: #22262a;
     --bordercolour: #5b6167;
     --searchbg: #535c65;
@@ -41,7 +41,7 @@
     --dropdownhover: #444444;
 }
 tr td {
-    background: var(--btncolour) !important;
+    background: var(--btncolour);
     color: var(--textcolour) !important;
 }
 .game-switch {
@@ -54,30 +54,17 @@ tr td {
 .game-stats tr td {
     background: var(--btncolour);
     color: var(--textcolour);
-    border: 0;
+    border: 0 !important;
     padding: 0px 0px;
+    box-shadow: 0 0 0!important;
 }
 tr.tablesorter-headerRow {
     background: transparent !important;
 }
 .game-stats th {
-    border: 0;
+    border: 0 !important;
 }
-.game-stats .class {
-    border: 0;
-}
-.game-stats .damage {
-    border: 0;
-}
-.game-stats .deaths {
-    border: 0;
-}
-.game-stats .heals {
-    border: 0;
-}
-.tablesorter-header-inner {
-    border: 0;
-}
+
 .game-stats tr.odd td {
     background: var(--colour);
     color: var(--textcolour);
@@ -92,7 +79,7 @@ tr.tablesorter-headerRow {
     border: 0;
 }
 td.player {
-    padding-left: 6px !important;
+    padding: 6px !important;
 }
 .game-switch.active {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4) !important;
@@ -139,6 +126,7 @@ a {
     border: 0;
     background: var(--transparent);
 }
+
 div #content {
     font-family: 'Roboto', sans-serif;
 
@@ -232,10 +220,6 @@ div#content {
     background-color: var(--mgcolour);
     background: var(--mgcolour) !important;
     padding: 0;
-}
-tr {
-
-    background: var(--tablebgcolour) !important;
 }
 .server-table td {
     font-size: 11px;
@@ -476,13 +460,10 @@ a.module-item {
     line-height: 22px;
     background: var(--sbcolour);
     border-bottom: 1px solid #4c545d;
-    box-shadow: 0px 1px 2px 1px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 2px 3px -1px rgba(0, 0, 0, 0.4);
 }
 a.module-item:hover {
-    line-height: 22px;
     background: var(--sbhover);
-    border-bottom: 1px solid #4c545d;
-    box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.4);
 }
 a.module-item > :first-child {
     border-radius: 3px;
