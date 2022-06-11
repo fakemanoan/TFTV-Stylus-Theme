@@ -1,6 +1,8 @@
 # TFTV-Stylus-Theme
 Stylus/Stylish/Custom CSS for teamfortress.tv to make it look like it wasnt made in 2009. Dark mode for extra points.
 
+Based on the styling of the vlr.gg site, also created by engima.
+
 This is a WIP for now. End goal is to release it on userstyles.org or something.
 
 #Home Page
