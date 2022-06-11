@@ -27,7 +27,6 @@
     --postbg: #40474f;
     --postinner: #ccc;
     --border: #5b6167;
-    --linkcolour: #9ccbe2;
     --btncolour: #394046;
     --btnaccent: #454c54;
     --btncolour2: #40474f;
@@ -372,7 +371,6 @@ img {
 .sub-feature.first {
     margin-left: 5px;
 }
-#article-list ul {}
 #article-list li {
     height: 50px;
     border-bottom: 1px solid var(--bordercolour);
@@ -402,7 +400,6 @@ div#article-list {
 div {
     color: var(--textcolour);
 }
-span {}
 .form-label {
     padding-top: 5px;
     color: var(--textcolour2);
@@ -422,7 +419,6 @@ span.news-item-txt-container {
     width: 251px;
     height: 100%;
 }
-span.news-item-meta {}
 span.news-item-count-num {
     color: var(--textcolour);
     font-weight: normal;
@@ -446,7 +442,6 @@ a:visited,
 a:active {
     color: var(--linkcolour);
 }
-a.stream-box {}
 .module-header {
     background: var(--transparent) !important;
     background-color: var(--transparent) !important;
@@ -944,7 +939,6 @@ div.thread.first::before {
     padding-right: 0px;
     padding-top: 2px;
 }
-.block.main .tag::after {}
 .block.main .description {
     padding-bottom: 13px;
 }
@@ -960,7 +954,6 @@ div.thread.first::before {
 .block.frag {
     margin-top: 5px;
 }
-.group-plus {}
 .module-item-count {
     font-size: 12px;
 }
@@ -1046,7 +1039,6 @@ span.tag::after {
 .gallery-name {
     color: var(--textcolour2);
 }
-.fa-home {}
 .block.frag i {
     font-size: 22px;
 }
