@@ -277,9 +277,16 @@ i.fa.fa-home {
 .header-logo {
     height: 0;
 }
+#privacy {
+    color: var(--textcolour2);
+}
+#forum-rules {
+    color: var(--textcolour2);
+}
 div#content {
     background-color: var(--mgcolour);
     background: var(--mgcolour) !important;
+    color: var(--textcolour2);
     padding: 0;
 }
 .server-table td {

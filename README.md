@@ -1,19 +1,31 @@
 # TFTV-Stylus-Theme
-Stylus/Stylish/Custom CSS for Teamfortress.tv to make it look like it wasnt made in 2009.
+Stylus/Stylish/Custom CSS for teamfortress.tv to make it look like it wasnt made in 2009. Dark mode for extra points.
 
-this is a WIP and is purely for experimental purposes only. 
+This is a WIP for now. End goal is to release it on userstyles.org or something.
 
-![alt text](https://raw.githubusercontent.com/fakemanoan/TFTV-Stylus-Theme/main/screenshots./21th%20March%2022%20dark.png)
+#Home Page
+![alt text](https://raw.githubusercontent.com/fakemanoan/TFTV-Stylus-Theme/main/screenshots./11thJune/Screenshot_20220611_103913.png)
+
+#Threads
+![alt text](https://raw.githubusercontent.com/fakemanoan/TFTV-Stylus-Theme/main/screenshots./11thJune/Screenshot_20220611_103930.png)
+
+#Post
+![alt text](https://raw.githubusercontent.com/fakemanoan/TFTV-Stylus-Theme/main/screenshots./11thJune/Screenshot_20220611_103947.png)
+
+#Comments
+![alt text](https://raw.githubusercontent.com/fakemanoan/TFTV-Stylus-Theme/main/screenshots./11thJune/Screenshot_20220611_104025.png)
+
+#Match Page
+![alt text](https://raw.githubusercontent.com/fakemanoan/TFTV-Stylus-Theme/main/screenshots./11thJune/Screenshot_20220611_104558.png)
 
 # TODO
-custom svg flags
-misc custom svg icons
-better tables
-better streams section
+custom svg flags <br>
+better tables<br>
+better streams section (lol)<br>
 clean up of css
 
 # EXTRA TODO
-Tampermonkey script
-better match column
-global search
-teams
+Tampermonkey script<br>
+better match column<br>
+global search (lol)<br>
+teams (lol)
