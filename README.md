@@ -20,6 +20,9 @@ This is a WIP for now. End goal is to release it on userstyles.org or something.
 # Match Page
 ![alt text](https://raw.githubusercontent.com/fakemanoan/TFTV-Stylus-Theme/dark/screenshots./11thJune/Screenshot_20220611_104558.png)
 
+# News
+![alt text](https://raw.githubusercontent.com/fakemanoan/TFTV-Stylus-Theme/dark/screenshots./11thJune/Screenshot_20220611_105630.png)
+
 # TODO
 custom svg flags <br>
 better tables<br>
