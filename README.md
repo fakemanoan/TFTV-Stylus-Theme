@@ -6,19 +6,19 @@ Based on the styling of the vlr.gg site, also created by engima.
 This is a WIP for now. End goal is to release it on userstyles.org or something.
 
 #Home Page
-![alt text](https://raw.githubusercontent.com/fakemanoan/TFTV-Stylus-Theme/main/screenshots./11thJune/Screenshot_20220611_103913.png)
+![alt text](https://raw.githubusercontent.com/fakemanoan/TFTV-Stylus-Theme/dark/screenshots./11thJune/Screenshot_20220611_103913.png)
 
 #Threads
-![alt text](https://raw.githubusercontent.com/fakemanoan/TFTV-Stylus-Theme/main/screenshots./11thJune/Screenshot_20220611_103930.png)
+![alt text](https://raw.githubusercontent.com/fakemanoan/TFTV-Stylus-Theme/dark/screenshots./11thJune/Screenshot_20220611_103930.png)
 
 #Post
-![alt text](https://raw.githubusercontent.com/fakemanoan/TFTV-Stylus-Theme/main/screenshots./11thJune/Screenshot_20220611_103947.png)
+![alt text](https://raw.githubusercontent.com/fakemanoan/TFTV-Stylus-Theme/dark/screenshots./11thJune/Screenshot_20220611_103947.png)
 
 #Comments
-![alt text](https://raw.githubusercontent.com/fakemanoan/TFTV-Stylus-Theme/main/screenshots./11thJune/Screenshot_20220611_104025.png)
+![alt text](https://raw.githubusercontent.com/fakemanoan/TFTV-Stylus-Theme/dark/screenshots./11thJune/Screenshot_20220611_104025.png)
 
 #Match Page
-![alt text](https://raw.githubusercontent.com/fakemanoan/TFTV-Stylus-Theme/main/screenshots./11thJune/Screenshot_20220611_104558.png)
+![alt text](https://raw.githubusercontent.com/fakemanoan/TFTV-Stylus-Theme/dark/screenshots./11thJune/Screenshot_20220611_104558.png)
 
 # TODO
 custom svg flags <br>
