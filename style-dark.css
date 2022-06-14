@@ -40,50 +40,101 @@
     --dropdown: #313131;
     --dropdownhover: #444444;
 }
-.flag-en{
-    background-position: 0 0;
-    background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg version='1.1' viewBox='0 0 640 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m0 0h640v400h-640' fill='%23fff' stroke-width='.8165'/%3E%3Cpath d='m282.4 319.49v-80.102h-281.96v-79.181h281.96v-160.2h75.13v160.2h281.96v79.176l-281.52 0.46601-0.22584 79.872-0.22586 79.872h-75.12z' fill='%23f00' stroke-width='.90211'/%3E%3C/svg%3E%0A");
-}
-.flag-en:before{
+.flag:before{
     content:' ';
     width:16px;
     height:10px;
     display:block;
     background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg version='1.1' viewBox='0 0 640 400' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cdefs%3E%3ClinearGradient id='a' x1='2.454' x2='727.26' y1='-2.454' y2='520.17' gradientTransform='matrix(.8 0 0 .83333 -6.5816e-6 8.3784e-6)' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-opacity='.76224' offset='.017321'/%3E%3Cstop stop-color='%231a1a1a' stop-opacity='.27848' offset='.099359'/%3E%3Cstop stop-color='%23fff' stop-opacity='.44937' offset='.19'/%3E%3Cstop stop-color='%23fff' stop-opacity='.41139' offset='.24679'/%3E%3Cstop stop-opacity='.16' offset='.37956'/%3E%3Cstop stop-opacity='.2' offset='.47115'/%3E%3Cstop stop-opacity='.18' offset='.53205'/%3E%3Cstop stop-color='%23fff' stop-opacity='.34177' offset='.65401'/%3E%3Cstop stop-color='%23fff' stop-opacity='.25' offset='.76383'/%3E%3Cstop stop-opacity='.20253' offset='.90336'/%3E%3Cstop stop-opacity='.31' offset='1'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='640' height='400' fill='url(%23a)' stroke-width='.8165' style='mix-blend-mode:normal'/%3E%3C/svg%3E%0A");
+}
+.flag-nl{
+    background-position: 0 0;
+    background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg version='1.1' viewBox='0 0 64 40' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='64' height='40' fill='%2321468b' stroke-width='6.8853'/%3E%3Crect width='64' height='26.667' fill='%23fff' stroke-width='6.8853'/%3E%3Crect width='64' height='13.333' fill='%23ae1c28' stroke-width='6.8853'/%3E%3C/svg%3E%0A");
+}
+.flag-ru{
+    background-position: 0 0;
+    background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg version='1.1' viewBox='0 0 64 40' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='64' height='20' fill='%23fff' stroke-width='6.8853'/%3E%3Crect y='20' width='64' height='20' fill='%23d52b1e' stroke-width='6.8853'/%3E%3Crect y='13.333' width='64' height='13.333' fill='%230039a6' stroke-width='6.8853'/%3E%3C/svg%3E%0A");
+}
+.flag-ee{
+    background-position: 0 0;
+    background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg version='1.1' viewBox='0 0 64 40' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='64' height='40' fill='%23fff' stroke-width='1.922'/%3E%3Crect width='64' height='26.667' stroke-width='1.922'/%3E%3Crect width='64' height='13.333' fill='%230072ce' stroke-width='1.922'/%3E%3C/svg%3E%0A");
+}
+.flag-de{
+    background-position: 0 0;
+    background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg version='1.1' viewBox='0 0 64 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cdesc%3EFlag of Germany%3C/desc%3E%3Crect width='64' height='40' stroke-width='13.064'/%3E%3Crect y='13.333' width='64' height='26.667' fill='%23d00' stroke-width='13.064'/%3E%3Crect y='26.667' width='64' height='13.333' fill='%23ffce00' stroke-width='13.064'/%3E%3C/svg%3E%0A");
+}
+.flag-ie{
+    background-position: 0 0;
+    background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg version='1.1' viewBox='0 0 64 40' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='64' height='40' fill='%23169b62' stroke-width='.059628'/%3E%3Crect x='21.333' width='42.667' height='40' fill='%23fff' stroke-width='.059628'/%3E%3Crect x='42.667' width='21.333' height='40' fill='%23ff883e' stroke-width='.059628'/%3E%3C/svg%3E%0A");
+}
+.flag-qu{
+    background-position: 0 0;
+    background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg version='1.1' viewBox='0 0 64 40' xmlns='http://www.w3.org/2000/svg' xmlns:cc='http://creativecommons.org/ns%23' xmlns:dc='http://purl.org/dc/elements/1.1/' xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns%23' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Ctitle%3EFlag of Québec%3C/title%3E%3Cpath d='m0 0h64v40h-64z' fill='%23fff' stroke-width='.006455'/%3E%3Cg id='b' transform='scale(.0066667 .00625)'%3E%3Cg id='a'%3E%3Cpath d='m4e3 0v2400h-4e3v-2400zm-1691 1622v-129h-115c0-66 32-130 66-150 20-17 65-25 104-5 51 29 54 113 28 151 243-45 219-280 136-365-67-69-140-79-196-58-128 46-214 199-218 427h-67c0-207 36-273 130-534 48-123 19-275-65-415-31-50-69-95-112-144-43 49-81 94-112 144-84 140-113 292-65 415 94 261 130 327 130 534h-67c-4-228-90-381-218-427-56-21-129-11-196 58-83 85-107 320 136 365-26-38-23-122 28-151 39-20 84-12 104 5 34 20 66 84 66 150h-115v129h239c-3 67-39 119-106 148 8 28 49 85 105 81 11 60 21 94 71 149 50-55 60-89 71-149 56 4 97-53 105-81-67-29-103-81-106-148z' fill='%23003da5'/%3E%3C/g%3E%3Cuse x='5600' xlink:href='%23a'/%3E%3C/g%3E%3Cuse transform='translate(0,-3975)' y='4000' xlink:href='%23b'/%3E%3Cmetadata%3E%3Crdf:RDF%3E%3Ccc:Work rdf:about=''%3E%3Cdc:title%3EFlag of Québec%3C/dc:title%3E%3C/cc:Work%3E%3C/rdf:RDF%3E%3C/metadata%3E%3C/svg%3E%0A");
+}
+.flag-sc{
+    background-position: 0 0;
+    background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg version='1.1' viewBox='0 0 64 40' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' fill='%23005eb8'/%3E%3Cpath d='m-2.0011-0.46965 69.604 39.411m-69.604 0 69.604-39.411' stroke='%23fff' stroke-width='8.114'/%3E%3C/svg%3E%0A");
+}
+.flag-np{
+    background-position: 0 0;
+    background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg version='1.1' viewBox='0 0 64 40' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cuse stroke='%23003893' stroke-width='5.165' xlink:href='%23a'/%3E%3Cpath id='a' d='m0.27039 18.866h37.196l-37.196-18.463v39.314h37.196l-37.196-29.485z' fill='%23dc143c' stroke-width='.55195'/%3E%3Cpath d='m9.5695 17.815c4.0916 0 7.4083-2.6291 7.4083-5.8725a7.9353 6.2902 0 0 1-3.3291 3.1058l-0.63234-0.37348 1.2399-0.73713-1.5003-0.30468 0.79353-1.0664-1.5499 0.17691 0.22938-1.2187-1.3453 0.63884-0.38436-1.204-0.92991 0.98284-0.92991-0.98284-0.39056 1.1991-1.3391-0.62902 0.22938 1.2285-1.5499-0.18182 0.80592 1.0664-1.5127 0.30468 1.2399 0.73713-0.61994 0.37839c-1.4693-0.68798-2.6657-1.7494-3.3353-3.1058 0 3.2434 3.3167 5.8725 7.4083 5.8725zm-3.5709 8.649-3.3229-0.32434 2.0148 2.1131-3.0811 1.0418 3.0811 1.032-2.0148 2.1131 3.3229-0.32434-0.40916 2.6389 2.6657-1.5971 1.3143 2.4473 1.3019-2.4473 2.6781 1.602-0.40916-2.634 3.3229 0.32925-2.0148-2.1131 3.0811-1.032-3.0811-1.0418 2.0148-2.1131-3.3229 0.31942 0.40916-2.634-2.6657 1.5971-1.3143-2.4522-1.3019 2.4424-2.6781-1.5971z' fill='%23fff' stroke-width='.55195'/%3E%3C/svg%3E%0A");
+}
+.flag-ga{
+    background-position: 0 0;
+    background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg version='1.1' viewBox='0 0 64 40' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='64' height='40' fill='%233a75c4' stroke-width='.13771'/%3E%3Crect width='64' height='26.667' fill='%23fcd116' stroke-width='.13771'/%3E%3Crect width='64' height='13.333' fill='%23009e60' stroke-width='.13771'/%3E%3C/svg%3E%0A");
+}
+.flag-cl{
+    background-position: 0 0;
+    background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg fill='%23ffffff' version='1.1' viewBox='0 0 64 40' xmlns='http://www.w3.org/2000/svg' xmlns:cc='http://creativecommons.org/ns%23' xmlns:dc='http://purl.org/dc/elements/1.1/' xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns%23'%3E%3Ctitle%3EFlag of Chile%3C/title%3E%3Cpath d='m0 0h64v40h-64z' stroke-width='10.328'/%3E%3Cpath d='m0 20v-20h21.333v30z' fill='%230039a6' stroke-width='10.328'/%3E%3Cpath d='m0 20h64v20h-64z' fill='%23d72b1f' stroke-width='10.328'/%3E%3Cpath d='m10.667 5 3.1349 9.045-8.2069-5.59h10.144l-8.2069 5.59z' stroke-width='10.328'/%3E%3Cmetadata%3E%3Crdf:RDF%3E%3Ccc:Work rdf:about=''%3E%3Cdc:title%3EFlag of Chile%3C/dc:title%3E%3C/cc:Work%3E%3C/rdf:RDF%3E%3C/metadata%3E%3C/svg%3E%0A");
+}
+.flag-cz{
+    background-position: 0 0;
+    background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg version='1.0' viewBox='0 0 64 40' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='64' height='40' fill='%23d7141a' stroke-width='.068853'/%3E%3Crect width='64' height='20' fill='%23fff' stroke-width='.068853'/%3E%3Cpath d='m32 20-32-20v40z' fill='%2311457e' stroke-width='.068853'/%3E%3C/svg%3E%0A");
+}
+.flag-jp{
+    background-position: 0 0;
+    background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg version='1.1' viewBox='0 0 64 40' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='64' height='40' fill='%23fff' stroke-width='.068853'/%3E%3Cellipse cx='32' cy='20' rx='12.8' ry='12' fill='%23bc002d' stroke-width='.068853'/%3E%3C/svg%3E ");
+}
+.flag-us{
+    background-position: 0 0;
+    background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg version='1.1' viewBox='0 0 64 40' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Crect width='64' height='40' fill='%23b22234' stroke-width='.0094119'/%3E%3Cpath d='m0 4.6154h64m0 6.1538h-64m0 6.1538h64m0 6.1538h-64m0 6.1538h64m0 6.1538h-64' stroke='%23fff' stroke-width='2.8236'/%3E%3Crect width='25.6' height='21.538' fill='%233c3b6e' stroke-width='.0094119'/%3E%3Cg transform='scale(.008637 .010256)' fill='%23fff'%3E%3Cg id='e'%3E%3Cg id='b'%3E%3Cg id='c'%3E%3Cg id='d'%3E%3Cpath id='a' d='m247 90 70.534 217.08-184.66-134.16h228.25l-184.66 134.16z'/%3E%3Cuse y='420' xlink:href='%23a'/%3E%3Cuse y='840' xlink:href='%23a'/%3E%3Cuse y='1260' xlink:href='%23a'/%3E%3C/g%3E%3Cuse y='1680' xlink:href='%23a'/%3E%3C/g%3E%3Cuse x='247' y='210' xlink:href='%23d'/%3E%3C/g%3E%3Cuse x='494' xlink:href='%23b'/%3E%3C/g%3E%3Cuse x='988' xlink:href='%23e'/%3E%3Cuse x='1976' xlink:href='%23b'/%3E%3Cuse x='2470' xlink:href='%23c'/%3E%3C/g%3E%3C/svg%3E%0A");
+}
+.flag-se{
+    background-position: 0 0;
+    background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg version='1.1' viewBox='0 0 640 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m0 0h640v400h-640z' fill='%23006aa7' stroke-width='40'/%3E%3Cpath d='m0 160h200v-160h80v160h360v80h-360v160h-80v-160h-200z' fill='%23fecc00' stroke-width='40'/%3E%3C/svg%3E%0A");
+}
+.flag-be{
+    background-position: 0 0;
+    background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg version='1.1' viewBox='0 0 640 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m0 0h640v400h-640z' fill='%23ef3340' stroke-width='.60388'/%3E%3Cpath d='m0 0h426.67v400h-426.67z' fill='%23fdda25' stroke-width='.60388'/%3E%3Cpath d='m0 0h213.33v400h-213.33z' stroke-width='.60388'/%3E%3C/svg%3E%0A");
+}
+.flag-ca{
+    background-position: 0 0;
+    background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg version='1.1' viewBox='0 0 64 40' xmlns='http://www.w3.org/2000/svg' xmlns:cc='http://creativecommons.org/ns%23' xmlns:dc='http://purl.org/dc/elements/1.1/' xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns%23'%3E%3Ctitle%3EFlag of Canada%3C/title%3E%3Cpath d='m0 0h16l0.66 0.825h30.68l0.66-0.825h16v40h-16l-0.66-0.825h-30.68l-0.66 0.825h-16z' fill='%23f00' stroke-width='.0074536'/%3E%3Cpath d='m16 0h32v40h-32zm16.6 36.917-0.3-7.1917a0.63333 0.79167 0 0 1 0.74-0.81667l5.7267 1.2583-0.77333-2.6667a0.43333 0.54167 0 0 1 0.13333-0.60833l6.2733-6.35-1.4133-0.825a0.43333 0.54167 0 0 1-0.22667-0.65833l1.24-4.7667-3.6133 0.95833a0.43333 0.54167 0 0 1-0.48667-0.31667l-0.7-2.0583-2.82 3.7833a0.43333 0.54167 0 0 1-0.74-0.475l1.36-8.7667-2.18 1.575a0.43333 0.54167 0 0 1-0.60667-0.225l-2.2133-5.4333-2.2133 5.4333a0.43333 0.54167 0 0 1-0.60667 0.225l-2.18-1.575 1.36 8.7667a0.43333 0.54167 0 0 1-0.74 0.475l-2.82-3.7833-0.7 2.0583a0.43333 0.54167 0 0 1-0.48667 0.31667l-3.6133-0.95833 1.24 4.7667a0.43333 0.54167 0 0 1-0.22667 0.65833l-1.4133 0.825 6.2733 6.35a0.43333 0.54167 0 0 1 0.13333 0.60833l-0.77333 2.6667 5.7267-1.2583a0.63333 0.79167 0 0 1 0.74 0.81667l-0.3 7.1917z' fill='%23fff' stroke-width='.0074536'/%3E%3Cmetadata%3E%3Crdf:RDF%3E%3Ccc:Work rdf:about=''%3E%3Cdc:title%3EFlag of Canada%3C/dc:title%3E%3C/cc:Work%3E%3C/rdf:RDF%3E%3C/metadata%3E%3C/svg%3E%0A");
+}
+.flag-en{
+    background-position: 0 0;
+    background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg version='1.1' viewBox='0 0 640 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m0 0h640v400h-640' fill='%23fff' stroke-width='.8165'/%3E%3Cpath d='m282.4 319.49v-80.102h-281.96v-79.181h281.96v-160.2h75.13v160.2h281.96v79.176l-281.52 0.46601-0.22584 79.872-0.22586 79.872h-75.12z' fill='%23f00' stroke-width='.90211'/%3E%3C/svg%3E%0A");
 }
 .flag-fi{
     background-position: 0 0;
     background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg version='1.1' viewBox='0 0 640 400' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='640' height='400' fill='%23fff' stroke-width='.35957'/%3E%3Crect y='145.45' width='640' height='109.09' fill='%23002f6c' stroke-width='.35957'/%3E%3Crect x='177.78' width='106.67' height='400' fill='%23002f6c' stroke-width='.35957'/%3E%3C/svg%3E%0A");
 }
-.flag-fi:before{
-    content:' ';
-    width:16px;
-    height:10px;
-    display:block;
-    background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg version='1.1' viewBox='0 0 640 400' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cdefs%3E%3ClinearGradient id='a' x1='2.454' x2='802.45' y1='-2.454' y2='478.53' gradientTransform='matrix(.8 0 0 .83333 -6.5816e-6 8.3784e-6)' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-opacity='.76224' offset='.017321'/%3E%3Cstop stop-color='%231a1a1a' stop-opacity='.27848' offset='.099359'/%3E%3Cstop stop-color='%23fff' stop-opacity='.44937' offset='.19'/%3E%3Cstop stop-color='%23fff' stop-opacity='.41139' offset='.24679'/%3E%3Cstop stop-opacity='.050633' offset='.37956'/%3E%3Cstop stop-opacity='.055944' offset='.49359'/%3E%3Cstop stop-opacity='.1' offset='.56731'/%3E%3Cstop stop-color='%23fff' stop-opacity='.34177' offset='.65401'/%3E%3Cstop stop-color='%23fff' stop-opacity='.41139' offset='.73499'/%3E%3Cstop stop-color='%23fff' stop-opacity='.063291' offset='.83013'/%3E%3Cstop stop-opacity='.12' offset='.87772'/%3E%3Cstop stop-opacity='.31' offset='1'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='640' height='400' fill='url(%23a)' stroke-width='.8165' style='mix-blend-mode:normal'/%3E%3C/svg%3E%0A");
-}
+
 .flag-eu{
     background-position: 0 0;
     background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg version='1.1' viewBox='0 0 640 400' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cdesc%3EEuropean flag%3C/desc%3E%3Cdefs%3E%3Cg id='b'%3E%3Cg id='c'%3E%3Cpath id='d' transform='rotate(18 3.1569 -.5)' d='m0 0v1h0.5z'/%3E%3Cuse transform='scale(-1,1)' xlink:href='%23d'/%3E%3C/g%3E%3Cg id='f'%3E%3Cuse transform='rotate(72)' xlink:href='%23c'/%3E%3Cuse transform='rotate(144)' xlink:href='%23c'/%3E%3C/g%3E%3Cuse transform='scale(-1,1)' xlink:href='%23f'/%3E%3C/g%3E%3C/defs%3E%3Crect width='640' height='400' fill='%23039' stroke-width='.76503'/%3E%3Cg transform='matrix(23.704 0 0 22.222 320 200)' fill='%23fc0'%3E%3Cuse y='-6' xlink:href='%23b'/%3E%3Cuse y='6' xlink:href='%23b'/%3E%3Cg id='e'%3E%3Cuse x='-6' xlink:href='%23b'/%3E%3Cuse transform='rotate(216 -2.3442 -2.1107)' xlink:href='%23b'/%3E%3Cuse transform='rotate(144 -2.1107 -2.3442)' xlink:href='%23b'/%3E%3Cuse transform='rotate(72 -4.6626 -2.0759)' xlink:href='%23b'/%3E%3Cuse transform='rotate(72 -5.0759 .5335)' xlink:href='%23b'/%3E%3C/g%3E%3Cuse transform='scale(-1,1)' xlink:href='%23e'/%3E%3C/g%3E%3C/svg%3E%0A");
 }
-.flag-eu:before{
-    content:' ';
-    width:16px;
-    height:10px;
-    display:block;
-    background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg version='1.1' viewBox='0 0 640 400' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cdefs%3E%3ClinearGradient id='a' x1='2.454' x2='727.26' y1='-2.454' y2='520.17' gradientTransform='matrix(.8 0 0 .83333 -6.5816e-6 8.3784e-6)' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-opacity='.76224' offset='.017321'/%3E%3Cstop stop-color='%231a1a1a' stop-opacity='.27848' offset='.099359'/%3E%3Cstop stop-color='%23fff' stop-opacity='.44937' offset='.19'/%3E%3Cstop stop-color='%23fff' stop-opacity='.41139' offset='.24679'/%3E%3Cstop stop-opacity='.16' offset='.37956'/%3E%3Cstop stop-opacity='.2' offset='.47115'/%3E%3Cstop stop-opacity='.18' offset='.53205'/%3E%3Cstop stop-color='%23fff' stop-opacity='.34177' offset='.65401'/%3E%3Cstop stop-color='%23fff' stop-opacity='.25' offset='.76383'/%3E%3Cstop stop-opacity='.20253' offset='.90336'/%3E%3Cstop stop-opacity='.31' offset='1'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='640' height='400' fill='url(%23a)' stroke-width='.8165' style='mix-blend-mode:normal'/%3E%3C/svg%3E%0A");
-}
 .flag-fr{
     background-position: 0 0;
-   background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg version='1.1' viewBox='0 0 640 400' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cdefs%3E%3ClinearGradient id='a' x1='2.454' x2='802.45' y1='-2.454' y2='478.53' gradientTransform='matrix(.8 0 0 .83333 1.7871e-6 6.5215e-6)' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-opacity='.76224' offset='.017321'/%3E%3Cstop stop-color='%231a1a1a' stop-opacity='.27848' offset='.099359'/%3E%3Cstop stop-color='%23fff' stop-opacity='.39873' offset='.19'/%3E%3Cstop stop-color='%23fff' stop-opacity='.32911' offset='.23718'/%3E%3Cstop stop-opacity='.050633' offset='.37956'/%3E%3Cstop stop-opacity='.055944' offset='.49359'/%3E%3Cstop stop-opacity='.1' offset='.56731'/%3E%3Cstop stop-color='%23fff' stop-opacity='.1962' offset='.65401'/%3E%3Cstop stop-color='%23fff' stop-opacity='.29747' offset='.73499'/%3E%3Cstop stop-opacity='.12' offset='.84567'/%3E%3Cstop stop-opacity='.31' offset='1'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='640' height='400' fill='%23ed2939' stroke-width='.68853'/%3E%3Crect width='426.67' height='400' fill='%23fff' stroke-width='.68853'/%3E%3Crect width='213.33' height='400' fill='%23002395' stroke-width='.68853'/%3E%3Crect x='4.7801e-6' y='-6.5529e-7' width='640' height='400' fill='url(%23a)' stroke-width='.8165' style='mix-blend-mode:normal'/%3E%3C/svg%3E%0A");
+   background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg version='1.1' viewBox='0 0 640 400' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='640' height='400' fill='%23ed2939' stroke-width='.68853'/%3E%3Crect width='426.67' height='400' fill='%23fff' stroke-width='.68853'/%3E%3Crect width='213.33' height='400' fill='%23002395' stroke-width='.68853'/%3E%3C/svg%3E%0A");
 }
 .flag-it{
     background-position: 0 0;
-   background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg version='1.1' viewBox='0 0 640 400' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cdefs%3E%3ClinearGradient id='a' x1='2.454' x2='802.45' y1='-2.454' y2='478.53' gradientTransform='scale(.8 .83333)' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-opacity='.76224' offset='.014116'/%3E%3Cstop stop-color='%23171717' stop-opacity='.37342' offset='.064103'/%3E%3Cstop stop-color='%23fff' stop-opacity='.31646' offset='.15474'/%3E%3Cstop stop-color='%23fff' stop-opacity='.43038' offset='.22436'/%3E%3Cstop stop-opacity='.22152' offset='.3443'/%3E%3Cstop stop-opacity='.25316' offset='.40705'/%3E%3Cstop stop-opacity='0' offset='.55128'/%3E%3Cstop stop-color='%23fff' offset='.67324'/%3E%3Cstop stop-color='%23fff' offset='.71576'/%3E%3Cstop stop-color='%23c0c0c0' offset='.79808'/%3E%3Cstop offset='1'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cg transform='scale(500)' stroke-width='.41312'%3E%3Crect width='1.28' height='.8' fill='%23009246'/%3E%3Crect x='.42667' width='.85333' height='.8' fill='%23fff'/%3E%3Crect x='.85333' width='.42667' height='.8' fill='%23ce2b37'/%3E%3C/g%3E%3Crect width='640' height='400' fill='url(%23a)' stroke-width='.8165' style='mix-blend-mode:overlay'/%3E%3C/svg%3E%0A");
+   background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg version='1.1' viewBox='0 0 640 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cg transform='scale(500)' stroke-width='.41312'%3E%3Crect width='1.28' height='.8' fill='%23009246'/%3E%3Crect x='.42667' width='.85333' height='.8' fill='%23fff'/%3E%3Crect x='.85333' width='.42667' height='.8' fill='%23ce2b37'/%3E%3C/g%3E%3C/svg%3E%0A");
 }
 .flag-gb{
     background-position: 0 0;
-   background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg version='1.1' viewBox='0 0 640 400' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cdefs%3E%3ClinearGradient id='c' x1='2.454' x2='802.45' y1='-2.454' y2='478.53' gradientTransform='scale(.8 .83333)' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-opacity='.76224' offset='.026936'/%3E%3Cstop stop-color='%23fff' stop-opacity='.63291' offset='.19'/%3E%3Cstop stop-color='%23fff' stop-opacity='.54902' offset='.25'/%3E%3Cstop stop-opacity='.16084' offset='.402'/%3E%3Cstop stop-opacity='.055944' offset='.49359'/%3E%3Cstop stop-opacity='.13287' offset='.55128'/%3E%3Cstop stop-color='%23fff' stop-opacity='.33725' offset='.65401'/%3E%3Cstop stop-color='%23fff' stop-opacity='.51765' offset='.71255'/%3E%3Cstop stop-opacity='.34266' offset='.90336'/%3E%3Cstop stop-opacity='.41958' offset='1'/%3E%3C/linearGradient%3E%3C/defs%3E%3CclipPath id='b'%3E%3Cpath d='m0 0v30h60v-30z'/%3E%3C/clipPath%3E%3CclipPath id='a'%3E%3Cpath d='m30 15h30v15zm0 0v15h-30zm0 0h-30v-15zm0 0v-15h30z'/%3E%3C/clipPath%3E%3Cg transform='scale(10.667 13.333)' clip-path='url(%23b)'%3E%3Cpath d='m0 0v30h60v-30z' fill='%23012169'/%3E%3Cpath d='m0 0 60 30m0-30-60 30' stroke='%23fff' stroke-width='6'/%3E%3Cpath d='m0 0 60 30m0-30-60 30' clip-path='url(%23a)' stroke='%23c8102e' stroke-width='4'/%3E%3Cpath d='m30 0v30m-30-15h60' stroke='%23fff' stroke-width='10'/%3E%3Cpath d='m30 0v30m-30-15h60' stroke='%23c8102e' stroke-width='6'/%3E%3C/g%3E%3Crect width='640' height='400' fill='url(%23c)' stroke-width='.8165' style='mix-blend-mode:normal'/%3E%3C/svg%3E%0A");
+   background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg version='1.1' viewBox='0 0 640 400' xmlns='http://www.w3.org/2000/svg'%3E%3CclipPath id='b'%3E%3Cpath d='m0 0v30h60v-30z'/%3E%3C/clipPath%3E%3CclipPath id='a'%3E%3Cpath d='m30 15h30v15zm0 0v15h-30zm0 0h-30v-15zm0 0v-15h30z'/%3E%3C/clipPath%3E%3Cg transform='scale(10.667 13.333)' clip-path='url(%23b)'%3E%3Cpath d='m0 0v30h60v-30z' fill='%23012169'/%3E%3Cpath d='m0 0 60 30m0-30-60 30' stroke='%23fff' stroke-width='6'/%3E%3Cpath d='m0 0 60 30m0-30-60 30' clip-path='url(%23a)' stroke='%23c8102e' stroke-width='4'/%3E%3Cpath d='m30 0v30m-30-15h60' stroke='%23fff' stroke-width='10'/%3E%3Cpath d='m30 0v30m-30-15h60' stroke='%23c8102e' stroke-width='6'/%3E%3C/g%3E%3C/svg%3E%0A");
 }
 #post-loading {
     background: var(--mgcolour);
