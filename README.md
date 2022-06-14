@@ -24,13 +24,15 @@ This is a WIP for now. End goal is to release it on userstyles.org or something.
 ![alt text](https://raw.githubusercontent.com/fakemanoan/TFTV-Stylus-Theme/dark/screenshots./11thJune/Screenshot_20220611_105630.png)
 
 # TODO
-custom svg flags <br>
-better tables<br>
-better streams section (lol)<br>
+custom svg flags - <br>
+better tables <br>
 clean up of css
 
 # EXTRA TODO
 Tampermonkey script<br>
 better match column<br>
-global search (lol)<br>
+
+# UNREALISTIC BUT COOL IDEAS
+better streams section <br>
 teams (lol)
+global search like vlr.gg (lol)<br>
