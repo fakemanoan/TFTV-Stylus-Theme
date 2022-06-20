@@ -40,6 +40,38 @@
     --dropdown: #313131;
     --dropdownhover: #444444;
 }
+
+.stream-box{
+    background:var(--btncolour);
+    border: 1px solid var(--btnaccent);
+    box-shadow: 0 0 1px 1px rgb(0,0,0,0.4);
+    width:244px;
+    height:200px;
+}
+.stream-box.row-end{
+    width:244px;
+}
+.stream-box:hover{
+    background:var(--btncolour2);
+}
+.stream-box img{
+    width:244px;
+    height:138px;
+}
+.stream-box .cover{
+    width:244px;
+    height:138px;
+}
+.stream-name{
+    font-size:16px;
+    margin-top:2px;
+    margin-left:4px;
+}
+.stream-title{
+    margin-top:2px;
+    margin-left:4px;
+    
+}
 #post-loading {
     background: var(--mgcolour);
 }
