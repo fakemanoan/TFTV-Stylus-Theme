@@ -24,7 +24,7 @@ This is a WIP for now. End goal is to release it on userstyles.org or something.
 ![alt text](https://raw.githubusercontent.com/fakemanoan/TFTV-Stylus-Theme/dark/screenshots./11thJune/Screenshot_20220611_105630.png)
 
 # TODO
-custom svg flags - <br>
+custom svg flags ✓ <br>
 better tables <br>
 clean up of css
 
@@ -34,7 +34,7 @@ better match column<br>
 
 # UNREALISTIC BUT COOL IDEAS
 better streams section <br>
-teams (lol)
+teams (lol) <br>
 global search like vlr.gg (lol)<br>
 
 # Known Issues
