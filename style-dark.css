@@ -126,6 +126,12 @@ span.star-1 {
     padding: 0px 0px;
     box-shadow: 0 0 0!important;
 }
+li strong{
+    font-size:16px;
+}
+#article-body ul li::before{
+    background: var(--textcolour);
+}
 #inbox-count-inner {
     background: red;
 }
