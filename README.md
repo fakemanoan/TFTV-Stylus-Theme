@@ -38,7 +38,7 @@ global search like vlr.gg (lol) <br>
 - Improper scaling (ie 125%, 175%) causes top navbar lines to be weird. Nothing I can really do to make this look good (is the same on vlr.gg). So dont use 125% scaling, ya dunce!
 
 # Credits
-Flags: Wikimedia Commons and https://github.com/lipis/flag-icons
-Nerd stars and class icons: Fakeman (me)
-TF2 Icon: Fly Clipart
-TFTV icon: Roblan11
+Flags: Wikimedia Commons and https://github.com/lipis/flag-icons <br>
+Nerd stars and class icons: Fakeman (me)<br>
+TF2 Icon: Fly Clipart<br>
+TFTV icon: Roblan11<br>
