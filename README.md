@@ -6,7 +6,7 @@ Based on the styling of the vlr.gg site, also created by engima.
 This project is a WIP. Any feedback is appreciated.
 
 # Home Page
-![alt text](https://raw.githubusercontent.com/fakemanoan/TFTV-Stylus-Theme/dark/screenshots./3dJuly/Screenshot_20220703_131450.png)
+![alt text](https://raw.githubusercontent.com/fakemanoan/TFTV-Stylus-Theme/dark/screenshots./3rdJuly/Screenshot_20220703_131450.png)
 
 # Post
 ![alt text](https://raw.githubusercontent.com/fakemanoan/TFTV-Stylus-Theme/dark/screenshots./3rdJuly/Screenshot_20220703_131559.png)
@@ -18,7 +18,7 @@ This project is a WIP. Any feedback is appreciated.
 ![alt text](https://raw.githubusercontent.com/fakemanoan/TFTV-Stylus-Theme/dark/screenshots./3rdJuly/Screenshot_20220703_131509.png)
 
 # Modern SVG Icons
-Optional high quality flags and class icons.
+Optional high quality flags and class icons. <br>
 ![alt text](https://raw.githubusercontent.com/fakemanoan/TFTV-Stylus-Theme/dark/screenshots./3rdJuly/PNGVSSVG.png)
 
 # TODO
