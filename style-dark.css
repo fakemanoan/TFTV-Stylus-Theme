@@ -40,6 +40,9 @@
     --dropdown: #313131;
     --dropdownhover: #444444;
 }
+.module-item-title.mod-event{
+    width:135px;
+}
 #article-body h1,h2,h3,h4,h5 {
         color: var(--textcolour);
 }
