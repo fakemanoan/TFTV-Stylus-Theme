@@ -27,6 +27,8 @@
 }
 .tf2-classes{
     background-position:0 0;
+    width:24px;
+    height:24px;
 }
 .flag:before{
     content:' ';
