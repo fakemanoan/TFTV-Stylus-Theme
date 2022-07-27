@@ -22,8 +22,12 @@ Optional high quality flags and class icons. <br>
 ![alt text](https://raw.githubusercontent.com/fakemanoan/TFTV-Stylus-Theme/dark/screenshots./3rdJuly/PNGVSSVG.png)
 
 # TODO
+Get SVG file size down a bit <br>
+Fix clipping issues on some elements <br>
+Get Chrome to not look weird <br>
 better tables <br>
-clean up of css
+clean up of css <br>
+Release on userstyles.org and TFTV post
 
 # EXTRA TODO
 Tampermonkey script to add more functionality to the site<br>
