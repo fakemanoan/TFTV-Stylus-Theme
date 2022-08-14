@@ -981,16 +981,17 @@ div.forum-container::before
 .clearfix {
     margin-bottom: 10px !important;
 }
-
-.block.main .tag {
-    float: none;
-    font-size: 10px;
+.block.main .tag{
+    display:table;
     text-transform: uppercase;
-    padding-right: 0px;
-    padding-top: 2px;
+    float:initial;
+}
+.block.main .tag::after{
+    content: "\A";
+    white-space: nowrap;
 }
 .block.main .description {
-    padding-bottom: 13px;
+    padding-bottom: 11px;
 }
 .header-banner-inner {
     height: 0;
@@ -1043,10 +1044,6 @@ textarea:focus {
 .post-body code, table code {
     color: var(--textcolour);
     background: var(--btncolour);
-}
-span.tag::after {
-    content: '\A';
-    white-space: pre;
 }
 .filter-menu {
     background: var(--dropdown);
