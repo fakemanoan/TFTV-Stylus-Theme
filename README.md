@@ -18,16 +18,14 @@ This project is a WIP. Any feedback is appreciated.
 ![alt text](https://raw.githubusercontent.com/fakemanoan/TFTV-Stylus-Theme/dark/screenshots./3rdJuly/Screenshot_20220703_131509.png)
 
 # Modern SVG Icons
-Optional high quality flags and class icons. <br>
+Optional high quality flags and class icons. Improves image quality, especially when on scaled displays or zooming. <br>
 ![alt text](https://raw.githubusercontent.com/fakemanoan/TFTV-Stylus-Theme/dark/screenshots./3rdJuly/PNGVSSVG.png)
 
 # TODO
-Get SVG file size down a bit <br>
-Fix clipping issues on some elements <br>
-Get Chrome to not look weird <br>
+Get SVG file size down a bit (sorta done) <br>
 better tables <br>
 clean up of css <br>
-Release on userstyles.org and TFTV post
+TFTV post
 
 # EXTRA TODO
 Tampermonkey script to add more functionality to the site<br>
@@ -40,6 +38,7 @@ global search like vlr.gg (lol) <br>
 
 # Known Issues
 - Improper scaling (ie 125%, 175%) causes top navbar lines to be weird. Nothing I can really do to make this look good (is the same on vlr.gg). So dont use 125% scaling, ya dunce!
+- the code is a mess. ill clean it up eventually, promise
 
 # Credits
 Flags: Wikimedia Commons and https://github.com/lipis/flag-icons <br>
