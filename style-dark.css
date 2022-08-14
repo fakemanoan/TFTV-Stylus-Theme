@@ -539,15 +539,15 @@ a:active {
     z-index: auto;
     text-shadow: 0 0 0;
 }
-module-header:hover {
+.module-header:hover {
     background: var(--transparent) !important;
     background-color: var(--transparent) !important;
     height: 30px;
     text-align: left;
     padding-left: 3px;
     border: 0;
-    border-bottom: 0px !important;
     box-shadow: 0 0 0 0;
+    text-decoration: underline;
 }
 #h-s-header {
     background: var(--tableheader);
