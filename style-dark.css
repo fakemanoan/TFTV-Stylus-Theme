@@ -387,6 +387,9 @@ img {
     font-weight: normal;
     margin-top: -89px;
 }
+.sub-feature:hover .sub-feature-caption{
+    background: var(--btncolour);
+}
 .sub-feature img {
     box-shadow: 0 1px 3px -1px rgba(0, 0, 0, 0.4);
 }
