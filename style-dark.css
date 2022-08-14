@@ -653,8 +653,9 @@ div.blockr.pages {
     font-size: 12px;
     width: 150px;
     border: 0;
-    margin-top: 5px;
     color: var(--textcolour);
+    padding:0;
+    margin-top:9px;
     padding-right: 2px;
 }
 .blockr.pages .post-count {
@@ -671,9 +672,12 @@ div.blockr.pages {
     background: var(--fragcount);
 }
 div.blockr.last-info {
+    width: 140px;
     font-size: 12px;
     border: 0;
-    margin-top: 7px;
+    margin-top: 9px;
+    padding:0;
+    padding-top:0;
     padding-right: 6px;
     height: 100% !important;
 }
@@ -849,10 +853,6 @@ a.subforum-title {
     font-weight: 500;
     display: inline-block;
     margin-bottom: 5px;
-}
-div.blockr.last-info {
-    width: 140px;
-    padding-top: 4px;
 }
 span.js-date-toggle {
     padding-top: 2px;
