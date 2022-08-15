@@ -25,10 +25,13 @@ Optional high quality flags and class icons. Improves image quality, especially 
 Get SVG file size down a bit (sorta done) <br>
 better tables <br>
 clean up of css <br>
-TFTV post
 
 # EXTRA TODO
-Tampermonkey script to add more functionality to the site<br>
+Tampermonkey script
+Some ideas:
+- Reorganize some of the panels
+- Add search bar element
+- Improve events/match column<br>
 
 # UNREALISTIC BUT COOL IDEAS
 better streams section <br>
