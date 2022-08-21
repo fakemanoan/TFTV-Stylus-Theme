@@ -44,8 +44,11 @@
 .module-item-title.mod-event{
     width:135px;
 }
-#article-body h1,h2,h3,h4,h5,b,#text {
+#article-body h1,h2,h3,h4,h5,b,#text{
         color: var(--textcolour2);
+}
+#article-body a,p, ul,li, em{
+    font-size:13px;
 }
 .header-nav-item.mod-solo i{
         color:white;
@@ -245,6 +248,7 @@ div #content {
     z-index: 1;
 }
 .footer {
+    background-color: var(--nbcolour);
     z-index: 1;
 }
 div.header-nav-item {
