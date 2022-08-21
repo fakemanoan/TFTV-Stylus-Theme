@@ -993,6 +993,9 @@ div.post {
 .post-frag-btn.plus.clicked::before{
     top:-5px;
 }
+.post-frag-btn.minus.clicked::before {
+    top:-4px;
+}
 div#thread-container {
     border: 0;
 }
