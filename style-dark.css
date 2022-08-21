@@ -47,8 +47,8 @@
 #article-body h1,h2,h3,h4,h5,b,#text{
         color: var(--textcolour2);
 }
-#article-body a,p, ul,li, em{
-    font-size:13px;
+#article-body a, #article-body p, #article-body ul, #article-body li, #article-body em{
+    font-size:14px;
 }
 .header-nav-item.mod-solo i{
         color:white;
@@ -138,7 +138,7 @@ span.star-3 {
     box-shadow: 0 0 0!important;
 }
 li strong{
-    font-size:16px;
+    font-size:15px;
 }
 #article-body ul li::before{
     background: var(--textcolour);
@@ -980,6 +980,9 @@ div.post {
     border-left: 2px solid var(--textcolour);
     color: var(--textcolour);
     background: var(--btncolour);
+}
+.post-frag-btn.plus.clicked::before{
+    top:-5px;
 }
 div#thread-container {
     border: 0;
