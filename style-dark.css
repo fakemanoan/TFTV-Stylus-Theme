@@ -1146,7 +1146,7 @@ textarea:focus {
 }
 .frag-container {
     margin-top: 0px !important;
-    margin-right: 2px;
+    margin-right: 10px;
 }
 .frag-count {
     font-size: 11px !important;
