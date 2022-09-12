@@ -40,7 +40,6 @@ teams (lol) <br>
 global search like vlr.gg (lol) <br>
 
 # Known Issues
-- Improper scaling (ie 125%, 175%) causes top navbar lines to be weird. Nothing I can really do to make this look good (is the same on vlr.gg). So dont use 125% scaling, ya dunce!
 - the code is a mess. ill clean it up eventually, promise
 
 # Credits
